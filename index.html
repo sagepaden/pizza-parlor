@@ -4,11 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/scripts.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="js/script.js"></script>
   <title>Document</title>
 </head>
-<body>
-  
-</body>
-</html>
+<body class="container">
+  <h1>Build Your Own Pizza</h1>
+  <form class="user-pizza">
+    <div class="container">
+      <p>Please choose the size of your pizza:</p>
+      <div class="user-size-selection">
+        <input type="radio" id="small-pizza" name="ui-pizza-size" value="small" required>
+        <label for="small-pizza"><kbd>Small - $8</kbd></label>
+        <br>
+        <input type="radio" id="medium-pizza" name="ui-pizza-size" value="medium">
+        <label for="medium-size"><kbd>Medium - $10</kbd></label>
+        <br>
+        <input type="radio" id="large-pizza" name="ui-pizza-size" value="large">
+        <label for="large-pizza"><kbd>Large - $12</kbd></label>
+        <br><br>
+      </div>
+    </div>
+    <div class="container">
+      <p>Please select your toppings(select up to 2):</p>
+      <div class="user-topping-selection">
+        <input type="checkbox" id="ui-cheese" value="cheese">
+        <label for="ui-cheese">Cheese +$1</label>
+        <br>
+        <input type="checkbox" id="ui-pepperoni" value="pepperoni">
+        <label for="ui-pepperoni">Pepperoni +$2</label>
+        <br>  
+        <input type="checkbox" id="ui-pineapple" value="pineapple">
+        <label for="pineapple">Pineapple +$1</label>
+        <br>
+        <input type="checkbox" id="ui-jalapeno" value="jalapeno"></input>
+        <label for="ui-jalapeno">Jalapeno +$1</label>
+        <br>
+        <input type="checkbox" id="ui-anchovy" value="anchovy"></input>
+        <label for="ui-anchovy">Anchovy +$4</label>
+        <br><br>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit-btn">Submit Your Order</button>
+  </form>
+  <br><br>
+  <p class="container" id="user-total"></p>
+  </body>
+  </html>
